@@ -1,0 +1,9 @@
+<h1>Flickr API</h1>
+
+<%= render 'form' %>
+
+<% unless @photos.nil? %>
+    <% @photos.each do |pic| %>
+        <%= image_tag Flickr.url_n(pic) %>
+    <% end %> 
+<% end %>

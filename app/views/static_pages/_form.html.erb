@@ -1,0 +1,7 @@
+<div>
+    <%= form_with url: "/", method: :get, remote: true do |f| %>
+        <%= f.text_field :user_id, :required => true, placeholder: "Enter a Flicker User ID" %>
+        
+        <%= f.submit "Search" %>
+    <% end %>
+</div>
